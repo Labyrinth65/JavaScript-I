@@ -75,6 +75,10 @@ console.log(`${inventory[inventory.length-1].car_make} ${inventory[inventory.len
 let carModels = inventory.sort((a,b) => (a.car_model > b.car_model) ? 1 : (b.car_model > a.car_model) ? -1 : 0);
 console.log(carModels);
 
+//Unicode
+// let carModels = inventory.sort((a,b) => (a.car_model.charCodeAt(0) - b.car_model.charCodeAt(0)));
+// console.log(carModels);
+
 // for loop solution
 // let carModels = []
 // for (i=0; i<inventory.length; i ++) {
